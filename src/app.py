@@ -22,3 +22,8 @@ def _handle_api_error(ex):
         return jsonify(error=str(ex)), ex.code
     else:
         return jsonify(error=str(ex)), ex.code
+
+
+@app.errorhandler(400)
+def _handle_api_error(ex):
+    return jsonify(error=str(ex)), ex.code
