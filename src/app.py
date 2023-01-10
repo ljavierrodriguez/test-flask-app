@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from dotenv import load_dotenv
-from routes.main import bp as main
+from .routes.main import bp as main
 
 load_dotenv()
 
