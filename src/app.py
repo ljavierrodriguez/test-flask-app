@@ -11,7 +11,3 @@ app.config['DEBUG'] = os.getenv("DEBUG", False)
 app.config['ENV'] = os.getenv("ENV", "production")
 
 app.register_blueprint(main)
-
-
-if __name__ == '__main__':
-    app.run()
